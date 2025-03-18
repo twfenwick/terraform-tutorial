@@ -12,16 +12,18 @@ provider "aws" {
 }
 
 resource "aws_vpc" "myvpc" {
-    cidr_block = "10.0.0.0/16"
+  cidr_block = "10.0.0.0/16"
 }
 
+# tuples and objects key for exam
+
 variable "mytuple" {
-  type = tuple([string, number, string])
+  type    = tuple([string, number, string])
   default = (["cat", 1, "dog"])
 }
 
 variable "myobject" {
-  type = object({name = string, port = list(number)})
+  type = object({ name = string, port = list(number) })
   default = {
     name = "Tim"
     port = [22, 25, 80]

@@ -50,5 +50,6 @@ resource "aws_vpc" "myvpc" {
 }
 
 output "vpcid" {
+  # value = type.name.attribute:
   value = aws_vpc.myvpc.id
 }

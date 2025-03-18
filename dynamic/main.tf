@@ -1,3 +1,15 @@
+# Dyanmic blocks in Terraform is way to create
+# reusable blocks of code that can be used to
+# generate multiple resources or configurations
+# based on a set of input values. This is
+# particularly useful when you have a variable
+# number of items to create or configure, such
+# as security group rules, IAM policies, or any
+# other resource that can have multiple instances.
+#
+# Don't overuse them as they can make your code
+# harder to read and maintain.
+
 terraform {
   required_providers {
     aws = {
